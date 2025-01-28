@@ -1,0 +1,109 @@
+INFO:root:Jeton d'accès obtenu avec succès.
+INFO:root:Texte extrait du PDF avec succès.
+INFO:root:Texte extrait : FORMATION
+JASON BESSIER
+DÉVELOPPEUR FULLSTACK
+CONTACT
+07 67 86 36 52
+jas.bessier@gmail.com
+118 Route de Narbonne,
+Res Maryse Bastié,
+31400 Toulouse
+www.linkedin.com/in/JasonBessier
+CENTRES D’INTÉRÊT
+L...
+INFO:root:Texte nettoyé : FORMATION JASON BESSIER DÉVELOPPEUR FULLSTACK CONTACT 07 67 86 36 52 jas.bessier@gmail.com 118 Route de Narbonne, Res Maryse Bastié, 31400 Toulouse www.linkedin.com/in/JasonBessier CENTRES D’INTÉRÊT L...
+INFO:root:Mots-clés extraits : ['bootstrap', 'formation', 'compétences', 'place', 'apprentissage', 'grâce', 'web', 'anglais', 'mention', 'formulaires', 'maryse', 'expérience', 'langue', 'recherche', 'propos', 'sens', 'niveau', 'curie', 'res', 'zéro', 'option', 'développement', 'docker', 'service', 'performance', 'requêtes', 'intérêt', 'manière', 'css', 'collaboration', 'authentification', 'équipe', 'entreprise', 'sabatier', 'scrum', 'isae', 'dut', 'joliot', 'utilisateurs', 'création', 'site', 'outil', 'méthodes', 'innovation', 'apis', 'moteur', 'bases', 'produits', 'narbonne', 'stage', 'ajustements', 'toulouse', 'compatibilité', 'technologies', 'retours', 'implémentation', 'elasticsearch', 'cuisine', 'paul', 'envoi', 'projets', 'lycée', 'bastié', 'esprit', 'infrastructure', 'mèze', 'gestion', 'vidéo', 'mise', 'api', 'sti2d', 'visibilité', 'centres', 'jeux', 'informatique', 'mysql', 'bac', 'système', 'contact', 'lecture', 'sète', 'langages', 'français', 'bessier', 'environnement', 'données', 'intégration', 'phpmailer', 'python', 'route', 'autonomie']
+INFO:root:🔎 Mots-clés détectés : ['bootstrap', 'formation', 'compétences', 'place', 'apprentissage', 'grâce', 'web', 'anglais', 'mention', 'formulaires', 'maryse', 'expérience', 'langue', 'recherche', 'propos', 'sens', 'niveau', 'curie', 'res', 'zéro', 'option', 'développement', 'docker', 'service', 'performance', 'requêtes', 'intérêt', 'manière', 'css', 'collaboration', 'authentification', 'équipe', 'entreprise', 'sabatier', 'scrum', 'isae', 'dut', 'joliot', 'utilisateurs', 'création', 'site', 'outil', 'méthodes', 'innovation', 'apis', 'moteur', 'bases', 'produits', 'narbonne', 'stage', 'ajustements', 'toulouse', 'compatibilité', 'technologies', 'retours', 'implémentation', 'elasticsearch', 'cuisine', 'paul', 'envoi', 'projets', 'lycée', 'bastié', 'esprit', 'infrastructure', 'mèze', 'gestion', 'vidéo', 'mise', 'api', 'sti2d', 'visibilité', 'centres', 'jeux', 'informatique', 'mysql', 'bac', 'système', 'contact', 'lecture', 'sète', 'langages', 'français', 'bessier', 'environnement', 'données', 'intégration', 'phpmailer', 'python', 'route', 'autonomie']
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur inattendue lors de la recherche d'offres : ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Erreur d'authentification (Code 401): TypeAuth invalide ou non renseignÃ©
+ERROR:root:Aucune offre trouvée pour les mots-clés donnés.

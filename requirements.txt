@@ -1,0 +1,4 @@
+fitz
+spacy
+requests
+python-dotenv
