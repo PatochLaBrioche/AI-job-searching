@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz
 import logging
 
 # Fonction pour extraire le texte d'un CV PDF

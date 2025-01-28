@@ -1,12 +1,13 @@
 import requests
 import logging
+from src.config import CLIENT_ID, CLIENT_SECRET, SCOPES
 
 # Fonction pour rechercher des offres d'emploi sur Pôle Emploi
 def search_pole_emploi_jobs(keywords, location, access_token):
-    url = "https://api.francetravail.io/partenaire/offresdemploi"
+    url = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
     headers = {
-        'Authorization': f'Bearer {access_token}',
-        'Content-Type': 'application/json'
+        'Accept': 'application/json',
+        'Authorization': f'Bearer {access_token}'
     }
 
     job_offers = []
@@ -15,8 +16,9 @@ def search_pole_emploi_jobs(keywords, location, access_token):
             'q': keyword,
             'l': location,
             'distance': '50',
-            'limit': 5,
+            'limit': 1,
         }
+        
         try:
             response = requests.get(url, headers=headers, params=params)
             response.raise_for_status()
@@ -26,7 +28,6 @@ def search_pole_emploi_jobs(keywords, location, access_token):
                 job_offers.extend(jobs)
             else:
                 logging.error(f"Erreur lors de la recherche sur Pôle Emploi (Code {response.status_code}): {response.text}")
-                print(f"Erreur {response.status_code} : {response.text}")
         except requests.exceptions.HTTPError as http_err:
             if response.status_code == 401:
                 logging.error(f"Erreur d'authentification (Code 401): {response.text}")
