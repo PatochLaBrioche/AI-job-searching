@@ -1,2 +1,4 @@
 .vscode/
 .env
+data/job_offers.json
+src/__pycache__/

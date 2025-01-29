@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.auth import get_access_token
 from src.pdf_extractor import extract_text_from_pdf
 from src.keyword_extractor import extract_keywords
-from src.job_search import search_pole_emploi_jobs
+from src.job_search import search_pole_emploi_jobs, save_job_offers_to_json
 import src.logging_config  # Pour configurer le logging
 
 # Programme principal
@@ -27,12 +27,17 @@ if __name__ == "__main__":
 
             if keywords:
                 job_offers = search_pole_emploi_jobs(keywords, access_token)
-
+                
+                # Créer le répertoire /data s'il n'existe pas
+                os.makedirs('data', exist_ok=True)
+                
+                # Enregistrer les résultats dans un fichier JSON
                 if job_offers:
-                    logging.info("\n📌 Offres trouvées :")
-                    for job in job_offers[:1]:
-                        logging.info(f"- {job['employeur']['nom']} | {job['intitule']} | {job['lieuTravail']['libelle']}")
+                    save_job_offers_to_json(job_offers, 'data/job_offers.json')
+                    logging.info("Offres trouvées et enregistrées dans 'data/job_offers.json'.")
                 else:
+                    if os.path.exists('data/job_offers.json'):
+                        os.remove('data/job_offers.json')
                     logging.error("Aucune offre trouvée pour les mots-clés donnés.")
             else:
                 logging.error("Aucun mot-clé trouvé dans le texte du CV.")
