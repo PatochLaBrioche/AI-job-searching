@@ -1,4 +1,0 @@
-PyMuPDF
-kagglehub
-googletrans
-nltk

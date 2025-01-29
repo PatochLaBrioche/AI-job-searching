@@ -10,3 +10,6 @@ python -m spacy download fr_core_news_sm
 
 # Liste des paramètres de recherche
 https://francetravail.io/produits-partages/catalogue/offres-emploi/documentation#/api-reference/operations/recupererListeOffre
+
+# Dataset :
+https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset?resource=download

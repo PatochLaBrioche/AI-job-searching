@@ -4,3 +4,6 @@ requests
 python-dotenv
 scrapy
 selenium
+kagglehub
+googletrans
+nltk
