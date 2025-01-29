@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../AI-training"
+		}
+	],
+	"settings": {
+		"sarif-viewer.connectToGithubCodeScanning": "off"
+	}
+}

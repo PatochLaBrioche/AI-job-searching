@@ -1,8 +1,0 @@
-INFO:root:URL d'authentification : https://entreprise.francetravail.fr/connexion/oauth2/access_token?realm=/partenaire
-INFO:root:Payload : {'grant_type': 'client_credentials', 'client_id': 'PAR_aijobsearch_803e5a60e30cea343027500c514dd1bfed4a31b311c12ed418311238c2be1975', 'client_secret': 'cb3f70ee76a715527ab2f451f413b62ad2347ff9a5dbb4fc7ab9ef1536d83a35', 'scope': 'api_offresdemploiv2 o2dsoffre'}
-INFO:root:Jeton d'accès obtenu avec succès.
-INFO:root:Jeton d'accès obtenu : AHbTNiyW1UsV0cS0tSypgo-WiX8
-INFO:root:Texte extrait du PDF avec succès.
-INFO:root:Mots-clés extraits : ['performance', 'mèze', 'authentification', 'isae', 'formation', 'manière', 'bootstrap', 'ajustements', 'sti2d', 'elasticsearch', 'technologies', 'utilisateurs', 'web', 'informatique', 'stage', 'implémentation', 'méthodes', 'option', 'phpmailer', 'vidéo', 'jeux', 'propos', 'grâce', 'mysql', 'curie', 'mention', 'équipe', 'requêtes', 'recherche', 'envoi', 'développement', 'langue', 'apprentissage', 'projets', 'res', 'maryse', 'api', 'langages', 'environnement', 'lecture', 'dut', 'joliot', 'intégration', 'lycée', 'création', 'bac', 'données', 'collaboration', 'bases', 'infrastructure', 'narbonne', 'service', 'anglais', 'expérience', 'scrum', 'intérêt', 'innovation', 'python', 'place', 'niveau', 'sens', 'site', 'docker', 'css', 'visibilité', 'sète', 'apis', 'français', 'gestion', 'centres', 'outil', 'formulaires', 'zéro', 'paul', 'sabatier', 'mise', 'contact', 'entreprise', 'route', 'compétences', 'autonomie', 'bessier', 'bastié', 'retours', 'système', 'moteur', 'compatibilité', 'toulouse', 'esprit', 'produits', 'cuisine']
-INFO:root:92 offres trouvées pour les mots-clés suivants : developpeur,web,fullstack,php
-INFO:root:Offres trouvées et enregistrées dans 'data/job_offers.json'.

@@ -11,9 +11,6 @@ def get_access_token():
         'scope': SCOPES
     }
 
-    logging.info(f"URL d'authentification : {OAUTH_TOKEN_URL}")
-    logging.info(f"Payload : {payload}")
-
     try:
         response = requests.post(OAUTH_TOKEN_URL, data=payload)
         response.raise_for_status()

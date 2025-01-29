@@ -2,3 +2,5 @@ PyMuPDF
 spacy
 requests
 python-dotenv
+scrapy
+selenium

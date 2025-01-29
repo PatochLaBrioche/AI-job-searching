@@ -1,6 +1,6 @@
 import re
 import logging
-from src.spacy_model import nlp
+from src.config import nlp
 
 # Fonction pour extraire les mots-clés du CV
 def extract_keywords(text):

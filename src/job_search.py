@@ -38,11 +38,14 @@ def search_pole_emploi_jobs(keywords, access_token):
         }
         try:
             response = requests.get(url, headers=headers, params=params)
-            response.raise_for_status()
-            for offer in response.json().get('resultats', []):
-                if offer['id'] not in seen_ids:
-                    seen_ids.add(offer['id'])
-                    all_results.append(offer)
+            if response.status_code == 204:
+                pass
+            else:
+                response.raise_for_status()
+                for offer in response.json().get('resultats', []):
+                    if offer['id'] not in seen_ids:
+                        seen_ids.add(offer['id'])
+                        all_results.append(offer)
         except requests.exceptions.HTTPError as http_err:
             if response.status_code == 401:
                 logging.error(f"Erreur d'authentification (Code 401): {response.text}")
@@ -72,11 +75,3 @@ def remove_unwanted_keys(job_offers):
 def save_job_offers_to_json(job_offers, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(job_offers, f, ensure_ascii=False, indent=4)
-
-# Exemple d'utilisation
-if __name__ == "__main__":
-    access_token = "votre_access_token"
-    results = search_pole_emploi_jobs(motsCles, access_token)
-    cleaned_results = remove_unwanted_keys(results)
-    save_job_offers_to_json(cleaned_results, "job_offers.json")
-    print("Les résultats ont été enregistrés dans job_offers.json")
