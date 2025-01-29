@@ -3,10 +3,11 @@ import os
 import logging
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
-from src.txt_preprocessing import preprocess_txt_files
-from sklearn.metrics import f1_score, make_scorer, hamming_loss
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score, hamming_loss
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import SGDClassifier
+from sklearn.preprocessing import MultiLabelBinarizer
 
 # TODO
 
@@ -14,7 +15,7 @@ def load_data():
     base_dir = 'datasets/cv_txt_processed'
     data_list = []
 
-    for root, dirs, files in os.walk(base_dir):
+    for root, _, files in os.walk(base_dir):
         for file in files:
             if file.endswith('.txt'):
                 file_path = os.path.join(root, file)
@@ -24,18 +25,18 @@ def load_data():
                 # Déterminer le split en fonction du dossier parent (assurez-vous que les fichiers sont bien organisés)
                 split = 'train' if 'train' in root else 'val' if 'val' in root else 'test'
                 
-                # Ajouter le texte et son split à la liste
-                data_list.append({'text': text, 'split': split})
+                # Ajouter le texte, son split et un label fictif à la liste
+                data_list.append({'text': text, 'split': split, 'label': 'dummy_label'})
 
     # Convertir en DataFrame
     return pd.DataFrame(data_list)
     
 
 def split_data(data):
-    train = data[data['split'] == 'train']
-    val = data[data['split'] == 'val']
-    test = data[data['split'] == 'test']
+    train, test = train_test_split(data, test_size=0.2, stratify=data['label'], random_state=42)
+    train, val = train_test_split(train, test_size=0.1, stratify=train['label'], random_state=42)
     return train, val, test
+
 
 def vectorize_data(train, val, test):
     if train.empty or val.empty or test.empty:
@@ -87,16 +88,32 @@ def evaluate_model(classifier, X_test, y_test, best_threshold):
     return f1_micro_test, hamming_loss_test
 
 def train_and_evaluate():
+    # Chargement des données
     data = load_data()
+    print("Nombre total d'échantillons chargés :", len(data))
+
+    # Split des données en train, validation et test
     train, val, test = split_data(data)
+
+    # Transformation des labels en format binaire multi-label
+    mlb = MultiLabelBinarizer()
+
+    # Transformation des labels en format binaire
+    train_labels = mlb.fit_transform(train['label'].values.reshape(-1, 1))
+    val_labels = mlb.transform(val['label'].values.reshape(-1, 1))
+    test_labels = mlb.transform(test['label'].values.reshape(-1, 1))
+
+    # Vectorisation des données textuelles
     X_train, X_val, X_test, vectorizer = vectorize_data(train, val, test)
-    classifier = train_classifier(X_train, train['domain'])
-    best_threshold = find_best_threshold(classifier, X_val, val['domain'])
-    f1_micro_test, hamming_loss_test = evaluate_model(classifier, X_test, test['domain'], best_threshold)
-    
-    return f1_micro_test, hamming_loss_test
 
+    # Entraînement du classificateur
+    classifier = train_classifier(X_train, train_labels)
 
+    # Recherche du meilleur seuil
+    best_threshold = find_best_threshold(classifier, X_val, val_labels)
 
+    # Évaluation du modèle
+    f1_micro_test, hamming_loss_test = evaluate_model(classifier, X_test, test_labels, best_threshold)
 
-
+    logging.info(f"Micro F1 score on test data: {f1_micro_test}")
+    logging.info(f"Hamming loss on test data: {hamming_loss_test}")
