@@ -10,10 +10,9 @@ from src.keyword_extractor import extract_text_from_pdf, extract_keywords
 from src.requesting.job_search import search_pole_emploi_jobs, save_job_offers_to_json
 from src.datasets_processing.pdf_extractor import process_pdfs_in_directory
 from src.datasets_processing.txt_preprocessing import process_and_save_txt_files
-from src.tfidf import train_and_evaluate
+from src.tfidf import train_and_save_tfidf
 from src.config import configure_logging, dl_nltk_packages, CV_INPUT_DATASETS_PATH, CV_OUTPUT_DATASETS_PATH, CV_INPUT_PATH
-    
-    
+
 # Programme principal
 if __name__ == "__main__":
     configure_logging()
@@ -32,16 +31,16 @@ if __name__ == "__main__":
     elif choice == '2':
         process_and_save_txt_files()
     elif choice == '3':
-        train_and_evaluate()
+        train_and_save_tfidf()
     elif choice == '4':       
         access_token = get_access_token()
         if access_token:
             cv_path = CV_INPUT_PATH
-            cv_text = extract_text_from_pdf(cv_path)
+            cv_text = extract_text_from_pdf()
             if cv_text:
                 keywords = extract_keywords(cv_text)
                 if keywords:
-                    logging.info("Mots-clés : " + ", ".join([kw[0] for kw in keywords]))
+                    logging.info("Mots-clés extraits: " + keywords)
                     job_offers = search_pole_emploi_jobs(keywords, access_token)
                     
                     # Créer le répertoire /data s'il n'existe pas

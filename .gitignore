@@ -2,3 +2,5 @@
 .env
 data/job_offers.json
 src/__pycache__/
+requesting/__pycache__/
+datasets_processing/__pycache__/

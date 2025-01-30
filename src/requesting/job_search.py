@@ -2,7 +2,6 @@ import os
 import requests
 import logging
 import json
-from src.config import CLIENT_ID, CLIENT_SECRET, SCOPES
 
 # code INSEE de la commune (ici Toulouse)
 commune = 31555
@@ -10,8 +9,6 @@ commune = 31555
 distance = 30
 # grand domaine de l'offre d'emploi (ici Informatique / Télécommunication)
 grandDomaine = "M18"
-# motsCles nécessite une string sous la forme 'mot1,mot2,mot3'
-motsCles = "developpeur,web,fullstack,php"
 # Nature contrat
 typeContrat = "CDI"
 # Trie pertinence décroissante, distance croissante, date de création horodatée décroissante, origine de l'offre : sort=0 
@@ -26,8 +23,7 @@ def search_pole_emploi_jobs(keywords, access_token):
     }
     all_results = []
     seen_ids = set()
-    # Remplacer motsCles par la liste en paramètre quand fonctionnel
-    for keyword in motsCles.split(','):
+    for keyword in keywords.split(','):
         params = {
             "commune": commune,
             "distance": distance,
@@ -54,7 +50,7 @@ def search_pole_emploi_jobs(keywords, access_token):
         except Exception as err:
             logging.error(f"Erreur inattendue lors de la recherche d'offres : {err}")
 
-    logging.info(f"{len(all_results)} offres trouvées pour les mots-clés suivants : {motsCles}")
+    logging.info(f"{len(all_results)} offres trouvées pour les mots-clés suivants : {keywords}")
     return all_results
 
 # Fonction pour supprimer les clés indésirables des résultats

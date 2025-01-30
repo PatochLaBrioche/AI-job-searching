@@ -14,6 +14,7 @@ SCOPES = "api_offresdemploiv2 o2dsoffre"
 CV_INPUT_PATH = "data/cv.pdf"
 CV_INPUT_DATASETS_PATH = "datasets/cv_pdf/"
 CV_OUTPUT_DATASETS_PATH = "datasets/cv_txt/"
+VECTORIZER_PATH = "data/tfidf_vectorizer.pkl"
 
 # Charger le modèle de langue spaCy
 nlp = spacy.load("fr_core_news_md")

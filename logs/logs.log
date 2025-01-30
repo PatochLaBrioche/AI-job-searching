@@ -1,7 +1,6 @@
-2025-01-29 23:27:17,541 - auth.py - 21 - Jeton d'accès obtenu avec succès.
-2025-01-29 23:27:17,554 - keyword_extractor.py - 12 - Texte extrait du PDF avec succès.
-2025-01-29 23:27:19,368 - tfidf.py - 130 - Modèles chargés
-2025-01-29 23:27:19,378 - keyword_extractor.py - 22 - Mots-clés extraits: [('HR',)]
-2025-01-29 23:27:19,400 - main.py - 44 - Mots-clés : HR
-2025-01-29 23:27:20,656 - job_search.py - 57 - 92 offres trouvées pour les mots-clés suivants : developpeur,web,fullstack,php
-2025-01-29 23:27:20,669 - main.py - 53 - Offres trouvées et enregistrées dans 'data/job_offers.json'.
+2025-01-30 09:02:48,960 - auth.py - 21 - Jeton d'accès obtenu avec succès.
+2025-01-30 09:02:48,972 - keyword_extractor.py - 13 - Texte extrait du PDF avec succès.
+2025-01-30 09:02:50,712 - tfidf.py - 51 - Modèle TF-IDF chargé avec succès.
+2025-01-30 09:02:51,414 - main.py - 43 - Mots-clés extraits: développement web,retours,toulouse,stage développement,elasticsearch,utilisateurs,web,compétences techniques,développement,stage
+2025-01-30 09:02:55,368 - job_search.py - 53 - 243 offres trouvées pour les mots-clés suivants : développement web,retours,toulouse,stage développement,elasticsearch,utilisateurs,web,compétences techniques,développement,stage
+2025-01-30 09:02:55,406 - main.py - 52 - Offres trouvées et enregistrées dans 'data/job_offers.json'.
